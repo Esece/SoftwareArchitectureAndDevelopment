@@ -1,4 +1,5 @@
 # CodeSmells
+Legal but controversial, if not bad, coding practices that can adversely affect readability, maintainability and bug fixing. Not all of the examples need immediate correction, so they are more of subject matters upon reviewing code.
 
 ### Unnecessary Maintenance
 
