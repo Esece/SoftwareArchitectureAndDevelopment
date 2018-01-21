@@ -4,7 +4,7 @@
 
 * Identityless
 * Immutable
-* Value Equality
+* Structural Equality
 
 ``` csharp
 public struct PackageSize : IComparable<PackageSize>
