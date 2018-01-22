@@ -1,4 +1,4 @@
-### Value Objects
+### Repository
 
 * Centralized facade over a backing store (database, XML, SOAP, REST, etc.)
 
