@@ -29,6 +29,13 @@ for (i = 0; i < 4; i++) {
 }
 ```
 
+Declare Variables at the Top
+``` javascript
+var x = 5;
+var y;
+```
+> JavaScript declarations are hoisted. Without understanding which, programs may contain bugs and errors. 
+
 Minify Script Files
 ``` javascript
 for(i=0;i<4;i++){x+=1;}
