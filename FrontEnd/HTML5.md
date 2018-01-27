@@ -5,9 +5,14 @@
 ```
 > The default character encoding in HTML5 is UTF-8
 
-Prefer Lower Case Element Names
+Prefer Lower Case Names (Elements, Attributes)
 ``` html
-<section>
+<section class="sct">
   <p>Testing...</p>
 </section>
+```
+
+Prefer Spaceless
+``` html
+<link rel="stylesheet" href="style.css" />
 ```
