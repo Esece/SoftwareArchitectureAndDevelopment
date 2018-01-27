@@ -16,3 +16,11 @@ Prefer Spaceless
 ``` html
 <link rel="stylesheet" href="style.css" />
 ```
+
+Use Server-Side Comments When Possible and Convenient (Comments do not add value to the browser.)
+``` html
+<!-- html comment -->
+@* razor (cshtml) comment *@
+```
+> You could remove comment as part of minification as well.
+
