@@ -1,5 +1,6 @@
-### HTML5
+### HTML
 
+HTML5
 ``` html
 <!DOCTYPE html>
 ```
