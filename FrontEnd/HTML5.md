@@ -24,3 +24,12 @@ Use Server-Side Comments When Possible and Convenient (Comments do not add value
 ```
 > You could remove comment as part of minification as well.
 
+Minification
+``` html
+<section class="sct"><p>Testing...</p></section>
+```
+
+Gzip Compression
+```
+Content-Encoding: gzip
+```
