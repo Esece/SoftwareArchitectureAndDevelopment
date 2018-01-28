@@ -1,11 +1,11 @@
 # Software Architecture and Development
 
 ## Key Engineering Philosophies:
-* Efficincy
+* Efficint
 * Simple
 * Extendable
 * Composable
-* Ease of Maintenance
+* Easy to Maintain
 
 ### Efficincy
 ##### Standardize processes and automate common, repeated tasks
