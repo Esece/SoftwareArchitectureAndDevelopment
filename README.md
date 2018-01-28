@@ -1,4 +1,4 @@
-# Software Architecture and Design
+# Software Architecture and Development
 
 ## Key Engineering Philosophies:
 * Efficincy
