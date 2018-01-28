@@ -1,7 +1,7 @@
 # Software Architecture and Development
 
 ## Key Engineering Philosophies:
-* Efficint
+* Efficient
 * Simple
 * Extendable
 * Composable
