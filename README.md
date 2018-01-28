@@ -7,6 +7,17 @@
 * Composable
 * Easy to Maintain
 
+## Languages and Technologies Used:
+* C#
+* JavaScript
+* T-SQL
+* CSS
+* HTML
+* ASP.NET MVC
+* Bootstrap
+* jQuery
+* AngularJS
+
 ### Efficincy
 ##### Standardize processes and automate common, repeated tasks
 
