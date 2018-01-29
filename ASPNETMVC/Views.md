@@ -10,7 +10,41 @@
 * Avoid ViewBag
 * Do not minify manually
 
+#### Simple View Structure
+_Layout.cshtml
+``` html
+:
+<head>
+    :
+    <link rel="stylesheet"... />
+    @RenderSection("styles", false)
+</head>
+<body>
+    :
+    @RenderBody()
+    :
+    <script></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
+```
 
+Index.cshtml
+``` html
+@model...
+@section styles
+{
+    :  // page-specific css
+}
+
+:  // partial view
+
+@section scripts
+{
+    :  // page-specific script
+}
+```
+-----
 
 
 Create _Layout.cshtml Files Wherever Possible
