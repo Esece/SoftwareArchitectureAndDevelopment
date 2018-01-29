@@ -15,7 +15,7 @@
 |ModelState|Holds validated data and validation errors||
 
 #### Do NOT let HTTP Context objects go beyond controllers
-* Request Data (Form, JSON, XML, etc.)
+* Raw Request Data (Form, JSON, XML, etc.)
 * Cookie
 * Session
 * Request Headers
@@ -24,7 +24,7 @@
 
 > These values must be mapped to controller parameters if needed to be passed for further processing
 
-#### Do NOT perform serialization and conversion in controllers
+#### Avoid performing serialization and conversion in controllers
 Action Taking Converted, Strongly-Typed Arguments
 ``` csharp
 public ActionResult SignIn(string username, string password, AccountType accountType, bool rememberMe)
@@ -33,7 +33,7 @@ public ActionResult SignIn(string username, string password, AccountType account
 }
 ```
 
-Do Not Operate HTTP Request Directly in a controller
+Avoid Operate HTTP Request Directly in a controller
 ``` csharp
 // AVOID
 public ActionResult SignIn(string username, string password)
