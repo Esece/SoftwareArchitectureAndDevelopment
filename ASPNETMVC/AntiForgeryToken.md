@@ -2,7 +2,7 @@
 
 ##### Prevent other sites from submitting data
 
-> Warning: This is only effective when the request is sent from a web browser. Requests can still be sent programmatically via a simple HTTP request
+> WARNING: This is only effective when the request is sent from a web browser. Requests can still be sent programmatically via a simple HTTP request
 
 View
 ``` csharp
