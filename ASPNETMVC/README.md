@@ -13,3 +13,35 @@
 |Model Binders|Binds request data to Action parameters|Conversion, deserialization, validation|
 |Value Providers|Looks up data in Http request||
 |ModelState|Holds validated data and validation errors||
+
+#### Do NOT let HTTP Context objects go beyond controllers
+* Request Data (Form, JSON, XML, etc.)
+* Cookie
+* Session
+* Request Headers
+* Client Data (IP Address)
+* HTTP Method
+
+> These values must be mapped to controller parameters if needed to be passed for further processing
+
+#### Do NOT perform serialization and conversion in controllers
+Action Taking Converted, Strongly-Typed Arguments
+``` csharp
+public ActionResult SignIn(string username, string password, AccountType accountType, bool rememberMe)
+{
+    :
+}
+```
+
+Do Not Operate HTTP Request Directly in a controller
+``` csharp
+// AVOID
+public ActionResult SignIn(string username, string password)
+{
+    if (Request["RememberMe"] == "on")
+    {
+        :
+    }
+    :
+}
+```
