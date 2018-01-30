@@ -1,49 +1,41 @@
 # General Coding Guidelines
 
 ### One variable declaration per line
-
-Avoid:
 ``` csharp
+// AVOID
 int width, height;
-```
 
-Prefer:
-``` csharp
+
+// PREFER
 int width;
 int height;
 ```
 
 ### Prefer LINQ to a simple loop
-
-Avoid:
 ``` csharp
+// AVOID
 var errorMessages = new List<string>();
-
 foreach (var notification in notifications)
 {
     errorMessages.Add("Response: " + notification.Message);
 }
-
 response.Errors = errorMessages.ToArray()
-```
 
-Prefer:
-``` csharp
+
+// PREFER
 response.Errors = notifications.Select(n => "Response: " + n.Message).ToArray();
 ```
 
-### Prefer an operator to a method
-
-Avoid:
+### Prefer an operator over a method for primitives and string
 ``` csharp
+// AVOID
 if (StatusCode.Equals("OK"))
 {
     :
 }
-```
 
-Prefer:
-``` csharp
+
+// PREFER
 if (StatusCode == "OK")
 {
     :
@@ -51,8 +43,8 @@ if (StatusCode == "OK")
 ```
 
 ### Define the most likely condition first
-
 ``` csharp
+// PREFER
 if (a < 0)
 {
     // this condition is more expected..
@@ -64,9 +56,8 @@ else if (a > 10)
 ```
   
 ### Place return statements and non-return statements in separate conditionals
-
-Avoid:
 ``` csharp
+// AVOID
 if (a == 0)
 {
     return false;  // also applies to 'throw', 'break', and 'continue'
@@ -79,10 +70,9 @@ else
 {
     // some statement..
 }
-```
 
-Prefer:
-``` csharp
+
+// PREFER
 if (a == 0)
 {
     return false;
@@ -99,15 +89,12 @@ else
 ```
 
 ### Prefer UTC date to local date
-
 If the application stores date values, save and operate as UTC date and convert on client side using a timezone offset
-
-Avoid:
 ``` csharp
+// AVOID
 var time = DateTime.Now;
-```
 
-Prefer:
-``` csharp
+
+// PREFER
 var time = DateTime.UtcNow;
 ```
