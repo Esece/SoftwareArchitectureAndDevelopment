@@ -42,7 +42,11 @@ public class OrderService : IOrderService
 ```
 
 #### Global configuration should also be injected during setup
-
+Mapping (Autofac example)
+``` csharp
+var builder = new Autofac.ContainerBuilder();
+builder.RegisterType<RepositoryType>().As<IRepositoryType>();
+```
 AppSettings from web.config (Autofac example)
 ``` csharp
 builder.RegisterType<OrderProcessor>().As<IOrderService>().OnActivating(e =>
@@ -51,6 +55,19 @@ builder.RegisterType<OrderProcessor>().As<IOrderService>().OnActivating(e =>
 }
 ```
 > This is also to avoid having to access global objects inside the object.
+
+#### Ask for the top level object and let other objects be created automatically
+(Autofac example)
+``` csharp
+var container = builder.Build();
+
+using (var scope = container.BeginLifetimeScope())
+{
+    var service = scope.Resolve<IServiceType>();
+    service.Save(123);
+}
+```
+> This process is automated with the Autofac MVC integration.
 
 #### Interface segregation helps simplify unit testing greatly
 ``` csharp
