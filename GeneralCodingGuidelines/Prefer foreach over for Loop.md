@@ -1,4 +1,4 @@
-### Prefer foreach Loop to for Loop
+### Prefer foreach Loop over for Loop
 
 Avoid:
 ``` csharp
@@ -15,3 +15,6 @@ foreach (var notification in notifications)
     errorMessages.Add("Response: " + notification.Message);
 }
 ```
+
+> The fewer variables you use, the easier maintanance and troubleshooting will become later
+> A foreach loop ensures and indicates that the collection is used as readonly.
