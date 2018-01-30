@@ -1,4 +1,4 @@
-### Prefer an operator to a method
+### Prefer an operator to a method for primitives and string
 
 Avoid:
 ``` csharp
