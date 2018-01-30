@@ -16,5 +16,6 @@ foreach (var notification in notifications)
 }
 ```
 
-> The fewer variables you use, the easier maintanance and troubleshooting will become later
+> The fewer variables you use, the easier maintanance and troubleshooting will become later.
+
 > A foreach loop ensures and indicates that the collection is used as readonly.
