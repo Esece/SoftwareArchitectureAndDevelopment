@@ -60,11 +60,10 @@ builder.RegisterType<OrderProcessor>().As<IOrderService>().OnActivating(e =>
 (Autofac example)
 ``` csharp
 var container = builder.Build();
-
 using (var scope = container.BeginLifetimeScope())
 {
-    var service = scope.Resolve<IServiceType>();
-    service.Save(123);
+    var module = scope.Resolve<IShipper>();
+    module.Run();
 }
 ```
 > This process is automated with the Autofac MVC integration.
