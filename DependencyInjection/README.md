@@ -82,7 +82,7 @@ var orderService = new OrderService(fakeOrderProcessor);
 ```
 > It is highly recommended that a mocking framework be used to simplify setup of mocks and stubs.
 
-#### Understand an object lifetime scope caarefully and keep objects stateless if at all possible
+#### Understand an object lifetime scope carefully and keep objects stateless if at all possible
 ``` csharp
 public class OrderProcessor : IOrderProcessor
 {
