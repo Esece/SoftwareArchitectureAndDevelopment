@@ -1,5 +1,5 @@
 ## Data-Driven Programming
-Somewhat loosely defined, data-driven programming is about generating different output from a static set of commands. 
+Somewhat loosely defined, data-driven programming is about generating different output from a set command. 
 ### Simple Example
 Lookup Function
 ``` csharp
@@ -17,7 +17,7 @@ static string GetStateCode(string state)
 
 static Dictionary<string, string> StateLookup =...
 ```
-> The GetStateCode function is the commands, and the StateLookup object is the data. Furthermore, the Dictionary<,> class is also the commands and the pairs of strings are the data.
+> The GetStateCode function is the command, and the StateLookup object is the data. Furthermore, the Dictionary<,> class is also the commands and the pairs of strings are the data.
 
 **Non-Data-Driven Function**
 ``` csharp
