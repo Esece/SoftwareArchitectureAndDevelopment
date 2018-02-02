@@ -18,7 +18,7 @@
 * jQuery
 * AngularJS
 
-### Efficincy
+### Efficiency
 ##### Standardize processes and automate common, repeated tasks
 
 ### Simple
