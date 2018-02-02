@@ -59,4 +59,6 @@ var names = data.Select(d => d.Name).ToArray();
 > Data-driven programing separates general-purpose, reusable logic from data, otherwise reducing repetitive code.
 
 ### It's NOT database-driven programming!
-Not to be confused, its focus is not on developing a database-backed application.
+> Not to be confused, its focus is not on developing a database-backed application.
+
+
