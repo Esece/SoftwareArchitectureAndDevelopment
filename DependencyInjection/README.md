@@ -1,4 +1,4 @@
-## Dependency Injection
+# Dependency Injection
 
 Regardless of the IoC container, below is the typical process:
 1) Register type bindings (Map an interface with a concrete type,
