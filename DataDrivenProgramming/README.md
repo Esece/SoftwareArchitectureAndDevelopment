@@ -1,4 +1,4 @@
-## Data-Driven Programming
+# Data-Driven Programming
 Somewhat loosely defined, data-driven programming is about generating different output from a set command. 
 ### Simple Example
 Lookup Function
