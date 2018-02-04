@@ -1,4 +1,4 @@
-# General Coding Guidelines
+# Simple C# Coding Guidelines
 
 ### One variable declaration per line
 ``` csharp
