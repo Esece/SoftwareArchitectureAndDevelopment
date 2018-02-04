@@ -15,9 +15,9 @@ Simple C# coding style guidlines to simplify development and maintenance
 |Class|Pascal case|OrderProcessor, MTCalculator|
 |Method|Pascal case|Validate()|
 |Property|Pascal case|FullName|
-|Field (private)|Camel case with underscore prefix|_firstName|
+|Field (private)*|Camel case with underscore prefix|_firstName|
 |Field (non-private)|Pascal case|DefaultTimeOut|
-|Local variable|Camel case|orderStatus|
+|Local variable*|Camel case|orderStatus|
 
 **The casing for private members and locals do not need to be very strict as long as they are distinct and consistent.**
 ``` csharp
