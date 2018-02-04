@@ -54,7 +54,28 @@ else if (a > 10)
    // this condition is less expected..
 }
 ```
-  
+
+### Prefer UTC date to local date
+If the application stores date values, save and operate as UTC date and convert on client side using a timezone offset
+``` csharp
+// AVOID
+var time = DateTime.Now;
+
+
+// PREFER
+var time = DateTime.UtcNow;
+```
+
+### Use 'readonly' instead of 'const' for public members
+'const' requires the caller assembly be recompiled for any changes
+``` csharp
+// DO NOT DO THIS
+public const string Name = "Box";
+
+// DO THIS INSTEAD
+public readonly string Name = "Box";
+```
+
 ### Place return statements and non-return statements in separate conditionals
 ``` csharp
 // AVOID
@@ -86,15 +107,4 @@ else
 {
     // some statement..
 }
-```
-
-### Prefer UTC date to local date
-If the application stores date values, save and operate as UTC date and convert on client side using a timezone offset
-``` csharp
-// AVOID
-var time = DateTime.Now;
-
-
-// PREFER
-var time = DateTime.UtcNow;
 ```
