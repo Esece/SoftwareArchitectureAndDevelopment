@@ -82,29 +82,25 @@ public static class IListExtensions
 An Example of a reusable 'Value Type' base class in DDD. (Performance of generated code is equivalent of that of hand-written code, which is an order of magnitude faster than Reflection-based implementation.
 ``` csharp
 // Part of the code is omitted
-public abstract class ValueObject
+public abstract class ValueObject<T>
 {
-    static readonly Dictionary<Type, Func<object, int>> GetHashCodeInternals = new Dictionary<Type, Func<object, int>>();
-    static readonly object _syncLock = new object();
+    static Func<T, int> GetHashCodeCache;
     :
     
     public override int GetHashCode()
     {
-        var type = GetType();
-        Func<object, int> func;
+        var type = typeof(T);
+        Func<T, int> func = GetHashCodeCache;
 
-        if (!GetHashCodeInternals.TryGetValue(type, out func))
+        if (func == null)
         {
-            var param_obj = Expression.Parameter(typeof(object));
-            var var_t = Expression.Variable(type);
+            var param_t = Expression.Parameter(type);
             var var_hashcode = Expression.Variable(typeof(int));
             var lines = new List<Expression>();
 
-            lines.Add(Expression.Assign(var_t, Expression.Convert(param_obj, type)));
-
             foreach (var prop in type.GetProperties())
             {
-                Expression arg1 = Expression.Property(var_t, prop.Name);
+                Expression arg1 = Expression.Property(param_t, prop.Name);
                 Expression exp = Expression.Assign(var_hashcode, Expression.ExclusiveOr(var_hashcode, Expression.Call(arg1, prop.PropertyType.GetMethod("GetHashCode"))));
 
                 if (!prop.PropertyType.IsValueType)
@@ -117,15 +113,11 @@ public abstract class ValueObject
 
             lines.Add(var_hashcode);
 
-            func = Expression.Lambda<Func<object, int>>(Expression.Block(new[] { var_t, var_hashcode }, lines), param_obj).Compile();
-
-            lock (_syncLock)
-            {
-                GetHashCodeInternals[type] = func;
-            }
+            func = Expression.Lambda<Func<T, int>>(Expression.Block(new[] { var_hashcode }, lines), param_t).Compile();
+            GetHashCodeCache = func;
         }
 
-        return func(this);
+        return func((T)(object)this);
     }
 }
 ```
