@@ -1,11 +1,10 @@
-# const and readonly
+# DO NOT use 'const' for public members
 
 ### const keyword (C#)
 
-#### DO NOT use 'const' for public members
-
 'const' is build-time binding, meaning that any changes to the 'const' value forces caller assemblies to rebuild.
 ``` csharp
+// DO NOT DO THIS
 public const string Name = "Box";
 ```
 
