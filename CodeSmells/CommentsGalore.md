@@ -1,18 +1,27 @@
 ### Comments Galore
 
-Commenting every line
+Commenting like telling a story for each line
 ``` csharp
 // first get data
 var data = GetData(id);
 
 // then check
-var errors = Validate(date);
+var errs = Validate(date);
 
 // if everything is ok, save data
-if (errors.Count == 0)
+if (errs.Count == 0)
 {
     Save(data);
 }
 ```
 
+Commenting a poorly-named variable
+``` csharp
+var n = textbox.Text;
+:
+
+Save(n);  // saving name
+```
+
 > Before commenting, try making the methods and variables meaningful
+
