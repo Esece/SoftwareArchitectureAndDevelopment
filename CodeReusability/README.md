@@ -65,9 +65,8 @@ public static class IListExtensions
     public static IList<T> Shuffle<T>(this IList<T> list)
     {
         int n = list.Count;
-        while (n > 1)
+        while (n-- > 1)
         {
-            n--;
             int k = Random.Next(n + 1);
             T value = list[k];
             list[k] = list[n];
@@ -89,34 +88,26 @@ public abstract class ValueObject<T>
     
     public override int GetHashCode()
     {
-        var type = typeof(T);
         Func<T, int> func = GetHashCodeCache;
-
         if (func == null)
         {
-            var param_t = Expression.Parameter(type);
+            var param_t = Expression.Parameter(typeof(T));
             var var_hashcode = Expression.Variable(typeof(int));
             var lines = new List<Expression>();
-
-            foreach (var prop in type.GetProperties())
+            foreach (var prop in typeof(T).GetProperties())
             {
                 Expression arg1 = Expression.Property(param_t, prop.Name);
                 Expression exp = Expression.Assign(var_hashcode, Expression.ExclusiveOr(var_hashcode, Expression.Call(arg1, prop.PropertyType.GetMethod("GetHashCode"))));
-
                 if (!prop.PropertyType.IsValueType)
                 {
                     exp = Expression.IfThen(Expression.NotEqual(arg1, Expression.Constant(null)), exp);
                 }
-
                 lines.Add(exp);
             }
-
             lines.Add(var_hashcode);
-
             func = Expression.Lambda<Func<T, int>>(Expression.Block(new[] { var_hashcode }, lines), param_t).Compile();
             GetHashCodeCache = func;
         }
-
         return func((T)(object)this);
     }
 }
