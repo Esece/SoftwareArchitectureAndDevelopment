@@ -28,3 +28,16 @@ namespace AdvancedTech.ShippingPro  // namespace: pascal case
 |Member (Property, Method, Events, Public Fields)|Pascal|FullName, Validate(), Clicking|
 |Parameter, Local|Camel|orderStatus|
 |Imported types and methods|(Use original)|ImageList_AddMasked, WM_CLOSE|
+
+**The casing for private members and locals do not need to be very strict as long as they are distinct and consistent.**
+``` csharp
+// THIS IS OK
+public class Processor
+{
+    string m_name;  // 'm_' prefix
+    :
+    
+    public Processor(string name)
+    {
+        :
+```
