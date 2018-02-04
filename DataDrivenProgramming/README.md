@@ -59,7 +59,7 @@ var names = data.Select(d => d.Name).ToArray();
 > Data-driven programing separates general-purpose, reusable logic from data, otherwise reducing repetitive code.
 
 ### "Logic" can also become "Data"
-**Let input data create a command with .NET Expression**
+**Let input data create a command with .NET Expression API**
 Generate necessary code on demand (Mapping a value by a string key)
 ``` csharp
 static void MapValue<T>(T object, string key, string value)
