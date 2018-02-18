@@ -15,7 +15,6 @@ Evaluation Check Points:
 * Sharing (single application cache or cache consumed by multiple applications)
 * Cache Dependencies
 * Fallback Strategies
-* Double Caching
 
 > Caching as well as optimization in general should be the LAST part of development. Always measure performance and compare against performance requirements. DO NOT over-cache even if space is not an issue.
 
@@ -31,6 +30,7 @@ Avoid Caching These Items:
 - Session
 - Transactional Data
 - Profile Data
+- Data Already Cached Somewhere Else
 
 
 ### Cache or Optimize Logic
@@ -152,4 +152,13 @@ An Example of Cache Dependency:
 3. A product name has changed
 4. Flush the product data cache
 5. product header data update gets triggered (CACHE DEPENDENCY)
+
+#### Fallback Strategies
+
+- Profile cache items for severity and importance
+- Consider redundancy or even shutdown if critical item caching fails
+- Gracefully fall back to the non-caching process (usually already exists as part of the setup process)
+
+
+
 
