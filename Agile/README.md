@@ -41,3 +41,15 @@ Example Tasks
 >Create a Reset Password page
 
 >Log to password reset history
+
+
+
+
+#### Success in Agile greately depends on
+* Senior management support
+* Flattened team structure (Managers should not be part of a product team; every team member has roles and contributes at the same level.)
+* All team members in the same iteration (When developers and testers are in different iterations, you are in a mini-waterfall style.)
+* Scrum master (role)
+* All team members in the same area (Avoid email communication. Chatting would be ok.)
+* Daily standup (This is not optional.)
+
