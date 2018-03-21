@@ -1,5 +1,11 @@
 ## Take Advantage of Type Inference 
 
+Purposes:
+* Less typing
+* Reusable code
+
+-----
+
 An example of a long type name
 ``` csharp
 var queries = new[]
