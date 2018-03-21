@@ -1,5 +1,12 @@
 ## Dictionary with 'Type' Keys
 
+Purposes:
+* Thread-safe
+* Reusable code
+* Built-in feature
+
+-----
+
 If the key is a Type object,
 ``` csharp
 var dictionary = new Dictionary<Type, int>();
