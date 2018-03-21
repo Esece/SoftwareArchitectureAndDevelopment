@@ -3,6 +3,7 @@
 Purposes:
 * Less typing
 * Reusable code
+* Built-in feature
 
 -----
 
