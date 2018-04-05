@@ -107,4 +107,16 @@ class EmailAddress
 }
 ```
 
+### Utility
+- A way to group similar operations
+- Stateless in most cases
+- An anti-pattern for OO purists
 
+``` csharp
+class FormatUtility
+{
+    public static string FormatRegularPrice(double price) { ... }
+    public static string FormatSalePrice(double price) { ... }
+    public static string FormatClearancePrice(double price) { ... }
+}
+```
