@@ -159,6 +159,23 @@ if (breakfast != null)
 }
 ```
 
+### Vertical Alignment for Parameters
+The solution should be to redesign the method for a fewer parameters.
+```
+bool successful = service.GetResponse(id
+    , messageId
+    , contactId
+    , total
+    , itemType
+    , boxType
+    , contentType
+    , tax
+    , serviceId
+    , ResponseType.Standard
+    , comment
+    , message);
+```
+
 ### Type Checking in a Conditional Statement
 ### Frequent or Repeated Casting
 ### Switch Statements
