@@ -25,9 +25,28 @@ var fullname = String.Join(" ", names);  // simple and readable
 ```
 
 ### Comparing two strings case-insensitively (There are many ways to accomplish.)
-The most straight-forward way
+The most straight-forward approach
 ``` csharp
 if (String.Equals(name1, name2, StringComparison.OrdinalIgnoreCase))  // also null-safe
+{
+    :
+```
+
+Another approach
+``` csharp
+if (name1.Equals(name2, StringComparison.OrdinalIgnoreCase))  // this is not null safe if name1 can be null.
+{
+    :
+```
+
+Case-Insensitive Key Lookup (Dictionary)
+``` csharp
+var dictionary = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+```
+
+Avoid
+``` csharp
+if (name1.ToLower() == name2.ToLower())
 {
     :
 ```
