@@ -103,8 +103,13 @@ static void MapValue<T>(T object, string key, string value)
 
 > **DO USE reflection for simplicity if the performance is acceptable to your requirements.**
 
+**Regular Expression is also a data-driven approach**
+The pattern can easily be stored and loaded even at runtime
+``` csharp
+bool isZip = Regex.IsMatch(value, @"^\d{5}(|-\d{4})$");
+```
 
-### It's NOT database-driven programming!
+### Last but not least, it's NOT database-driven programming!
 > Not to be confused, its focus is not on developing a database-backed application.
 
 
