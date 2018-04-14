@@ -1,4 +1,4 @@
-### JavaScript
+## JavaScript
 
 **IE11 largely doesn't support ES6.**
 Avoid ES6 features if the end users are still using Internet Explorer
