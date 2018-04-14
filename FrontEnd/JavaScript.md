@@ -1,5 +1,18 @@
 ### JavaScript
 
+**IE11 largely doesn't support ES6.**
+Avoid ES6 features if the end users are still using Internet Explorer
+``` javascript
+[123,987].map(i => i > 500)  // you will see 'Syntax error' in IE11...
+```
+Rewritten
+``` javascript
+[123,987].map(function(i) { return i > 500; })  // you will see 'Syntax error' in IE11...
+```
+
+> It is highly recommended that you keep track of your own browser market share.
+
+
 (Usually) Put Scripts at the Bottom
 ``` html
 :
