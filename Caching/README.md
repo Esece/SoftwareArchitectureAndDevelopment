@@ -100,6 +100,30 @@ public class MySingleton
 }
 ```
 
+An Example of Property Caching
+``` csharp
+public class SubstringInfo
+{
+    string _source;
+    string _text;  // cache
+
+    public SubstringInfo(string source, int index, int length)
+    {
+        _source = source;
+        Index = index;
+        Length = length;
+    }
+
+    public int Index { get; protected set; }
+    public int Length { get; protected set; }
+
+    public string Text
+    {
+        get { return _text ?? (_text = _source.Substring(Index, Length)); }  // 2nd time will skip the processing...
+    }
+}
+``
+
 #### Nondeterministic
 
 This is when cache is created at an unspecified point of time. There may be a timer, a counter, or a sophisticated algorithm that decides when to create cache.
