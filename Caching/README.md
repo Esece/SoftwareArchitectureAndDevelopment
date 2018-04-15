@@ -122,7 +122,7 @@ public class SubstringInfo
         get { return _text ?? (_text = _source.Substring(Index, Length)); }  // 2nd time will skip the processing...
     }
 }
-``
+```
 
 #### Nondeterministic
 
