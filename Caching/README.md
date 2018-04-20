@@ -18,6 +18,8 @@ Evaluation Check Points:
 
 > Caching as well as optimization in general should be the LAST part of development. Always measure performance and compare against performance requirements. DO NOT over-cache even if space is not an issue.
 
+-----
+
 ### Cache or No Cache
 
 Typical Items to Cache:
@@ -27,10 +29,15 @@ Typical Items to Cache:
 - Dynamic Methods
 
 Avoid Caching These Items:
+- Calls with Query Parameters or POST Data
 - Session
 - Transactional Data
 - Profile Data
 - Data Already Cached Somewhere Else
+
+Design for Caching:
+- Separate Base Page with Dynamic Content (Cache base pages at least to speed up initial page load.)
+- Use ETag to Cache on the client side (i.e. static data in JSON format)
 
 
 ### Cache or Optimize Logic
