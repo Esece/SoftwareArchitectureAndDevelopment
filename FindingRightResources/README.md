@@ -29,18 +29,32 @@
   - Use testing tools like Selenium
   - Write automation scripts
 
-<br>
-
-> Good software engineers can build developer tools for their own and their peers. 
-
-> Average software engineers tend to go for newer technologies without much understanding of how they can solve existing problems.
 
 <br>
 
 ### Experience Levels
 * Junior
   - A recent college graduate with a computer science degree. 
-  - Someone who has less than 1-2 years of professional experience. In job interviews, candidates are typically expected to talk about their interests and personal software projects and to answer technical questions related to computer languages and algorithms. Good candidates show enthusiasm about building software in real life and tend to focus on using new technologies, good or bad.
+  - Someone who has less than 1-2 years of professional experience.
+  - Someone who needs some guidance or directions for getting tasks completed
+  - In job interviews, candidates are typically expected to talk about their interests and personal software projects and to answer technical questions related to computer languages and algorithms. Good candidates show enthusiasm about building software in real life and tend to focus on using new technologies, good or bad.
+* Mid-Level
+  - Someone who has been professionally coding with a variety of languages, frameworks, and technologies
+  - Someone who can complete tasks on his or her won with or without good practices
+  - In job interviews, candidates are expected to talk about the applications you worked on and the tools you have used.
+* Senior
+  - Someone who knows when to use and when not to use certain patterns, tools, and technologies
+  - Someone who can work with less experienced engineers and provide help or guidance
+  - In job interviews
+* Lead
+  - Someone who has not only been coding but also been leading software projects
+  - Someone who can also work with non-technical individuals and report project status effectively  - 
+
+<br>
+
+> Good software engineers can build developer tools for their own and their peers. 
+
+> Average software engineers tend to go for newer technologies without much understanding of how they can solve existing problems.
 
 <br>
 
