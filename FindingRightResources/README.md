@@ -34,27 +34,36 @@
 
 ### Experience Levels
 * Junior
-  - A recent college graduate with a computer science degree. 
-  - Someone who has less than 1-2 years of professional experience.
-  - Someone who needs some guidance or directions for getting tasks completed
+  - Recently graduated with, typically, a computer science degree, occasionally other IT degrees like information systems.
+  - Has 0-2 years of professional experience.
+  - Needs some guidance or directions for getting tasks completed
   - In job interviews, candidates are typically expected to talk about their interests and personal software projects and to answer technical questions related to computer languages and algorithms. Good candidates show enthusiasm about building software in real life and tend to focus on using new technologies, good or bad.
 * Mid-Level
-  - Someone who has been professionally coding with a variety of languages, frameworks, and technologies
-  - Someone who can complete tasks on his or her won with or without good practices
-  - In job interviews, candidates are expected to talk about the applications you worked on and the tools you have used.
+  - Has 2+ years of experience or has an master's degree in computer science with sometimes math and engineering as well
+  - Has been professionally coding with a variety of languages, frameworks, and technologies
+  - Can complete tasks on his or her own with or without good practices
+  - May not be able to understand how an entire application works even in a small project
+  - In job interviews, candidates are expected to talk about the applications or projects they worked on and the tools you have used.
 * Senior
-  - Someone who knows when to use and when not to use certain patterns, tools, and technologies
-  - Someone who can work with less experienced engineers and provide help or guidance
-  - In job interviews
+  - 5+ years of experience
+  - Familar with best practices and knows when to use and when not to use certain patterns, tools, and technologies
+  - Can start a software project from the ground up.
+  - Has good interpersonal skills and can work with less experienced engineers to provide help or guidance
+  - In job interviews, candidates are expected to talk about problems and solutions
 * Lead
-  - Someone who has not only been coding but also been leading software projects
-  - Someone who can also work with non-technical individuals and report project status effectively  - 
-
+  - 8+ years of experience
+  - Has been coding and also leading software projects and feature implementation
+  - Works with non-technical individuals and report development status effectively
+  - Conducts technical screening and interviews
+  - In job interviews, candidates are expected to talk about full-stack development and leadership experience 
+* Architect
+  - 10+ years of experience
+  - In job interviews, candidates are expected to talk about a wide range of tools and services like cloud technologies, analytics tools, logging, caching, and security.
 <br>
 
 > Good software engineers can build developer tools for their own and their peers. 
 
-> Average software engineers tend to go for newer technologies without much understanding of how they can solve existing problems.
+> Average software engineers tend to go for newer technologies without understanding of how they can solve existing problems.
 
 <br>
 
