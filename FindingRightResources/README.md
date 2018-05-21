@@ -67,13 +67,16 @@
 
 <br>
 
+<!--
 ### Types of Skills
 |Type|Where it's Effective|What to Watch Out|Remarks|
 |-----|-----|-----|-----|
 |Good Communication|Others can understand you. You can get your ways through better especially|Sometimes there is just more talking than taking action. Being able to speak well does not always mean being able to write (or code) effectively.|It's one of the most listed qualifications. Yet it's not so easy to assess. Sometimes it's about chemistry, and sometimes it's about whether someone speaks good English as a second language. After all, do you even need to list it as a requirement..?|
 |Database||||
 |Frameworks||||
+-->
 
+### Embracing Diversity
 > It may be one way to form a team with people that have similar skills, but you can also form a highly productive team with diversity. At the end, everyone is different, so why expect them to be the same..? Regardless, as a hiring manager, you should mention your expectations to potential employees. 
 
 <br>
