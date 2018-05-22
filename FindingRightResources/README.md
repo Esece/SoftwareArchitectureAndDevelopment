@@ -99,7 +99,7 @@
 |Use a string type for US Zip Codes|Use an interger type for US Zip Codes||
 |Keep a lambda expression short (C#)|Write a long, multi-line lambda expression (C#)||
 |Return an object for returning multiple values from a method (C#)|Use 'out' parameters to return multiple values from a method (C#)||
-|Use 'Tuple' objects to store and pass values within a variable or a class|Use 'Type' as a return type of a public method||
+|Limit 'Tuple' objects to storing and passig values within a variable or a class (C#)|Use 'Tuple' as a return type of a public method (C#)||
 
 
 
