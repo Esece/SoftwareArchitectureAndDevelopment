@@ -96,10 +96,14 @@
 |Define classes for different types of operations|Use #region tags to group different operations within a single class||
 |Use a meaningful variable name such as 'firstName.'|Use a short, cryptic name such as 'fn.'|| 
 |Avoid static objects and stateful static methods (C#)|Use static objects and stateful static methods for convenience||
-|Use a string type for US Zip Codes|Use an interger type for US Zip Codes||
+|Use a string type for US Zip Codes|Use an integer type for US Zip Codes||
 |Keep a lambda expression short (C#)|Write a long, multi-line lambda expression (C#)||
 |Return an object for returning multiple values from a method (C#)|Use 'out' parameters to return multiple values from a method (C#)||
 |Limit 'Tuple' objects to storing and passig values within a variable or a class (C#)|Use 'Tuple' as a return type of a public method (C#)||
+|A method is private by default|A method is public by default|
+|Write self-documenting code|Write a lot of code comments|
+|Use signed numeric types for public method parameters|Use unsigned or short numeric types because they are more space-efficient|
+
 
 
 
