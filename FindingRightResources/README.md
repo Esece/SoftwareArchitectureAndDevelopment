@@ -103,7 +103,7 @@
 |A method is private by default|A method is public by default|
 |Write self-documenting code|Write a lot of code comments|
 |Use signed numeric types for public method parameters|Use unsigned or short numeric types because they are more space-efficient|
-|Make backword-compatible changes or add new features without changing the current|Make breaking changes often introducing unplanned changes to be made elsewhere||
+|Make backward-compatible changes or add new features without changing the current|Make breaking changes often introducing unplanned changes to be made elsewhere||
 
 
 
