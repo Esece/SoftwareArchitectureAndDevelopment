@@ -81,9 +81,9 @@
 
 <br>
 
-### Software Engineers - Difference between Good Ones and Bad Ones
+### Software Engineers - Difference between Good and Bad
 
-|Good|Bad|Remarks|
+|Good Engineers|Bad Engineers|Remarks|
 |-----|-----|-----|
 |Convert data to the right type as soon as it is read|Convert data when and where it is used|Unconverted data can be of string or object type|
 |Serialize data when there is no more operation of it|Serialize data too early causing deserialization down the process||
@@ -103,7 +103,7 @@
 |A method is private by default|A method is public by default|
 |Write self-documenting code|Write a lot of code comments|
 |Use signed numeric types for public method parameters|Use unsigned or short numeric types because they are more space-efficient|
-
+|Make backword-compatible changes or add new features without changing the current|Make breaking changes often introducing unplanned changes to be made elsewhere||
 
 
 
