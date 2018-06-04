@@ -105,7 +105,7 @@
 |Use signed numeric types for public method parameters|Use unsigned or short numeric types because they are more space-efficient|
 |Make backward-compatible changes or add new features without changing the current|Make breaking changes often introducing unplanned changes to be made elsewhere||
 |Shallow call stacks|Deep call stacks|A large call stack can be an indication of spaghetti code.|
-
+|Use logging to discover bugs and exceptional events|Use logging to help debug||
 
 
 
