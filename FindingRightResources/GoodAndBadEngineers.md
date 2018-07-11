@@ -25,3 +25,5 @@
 |Use logging to discover bugs and exceptional events|Use logging to help debug||
 |Use caching with proper cache management (duration, dependency, events, etc.)|Just cache as much data as possible to speed up||
 |Make static methods thread-safe|Leave static methods thread-unsafe||
+|Organize namespaces and classes by functional area|Organize namespaces and classes as files and folders|These are two completely different purposes. One designed for developers using the code, the other for the code writer's benefits|
+
