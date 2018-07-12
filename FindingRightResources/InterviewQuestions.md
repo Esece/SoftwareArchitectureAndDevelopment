@@ -12,3 +12,7 @@
 |What is the difference between Boxing and Unboxing?|The issue to discuss should be rather using the object type to store a value type. Still, the boxing cost is insignificant in many applications.|
 
 
+### Questions for Language Details (C#)
+|Question|Notes|
+|-----|-----|
+|How would you name a local variable that you want to call "Shipping API?"  1) Shipping_API, 2) shipping_api, 3) shippingAPI, 4) ShippingAPI, 5) shippingApi|At least in C#, 5 is the most common name. Choosing 3 indicates that the candidate may not be familiar with the conventions or be simply careless about details.|
