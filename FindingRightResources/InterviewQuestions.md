@@ -17,7 +17,9 @@
 |What are the 3 principles of OOP?|Inheritance, encapsulation, and polymorphism are usually expected to be mentioned. However very rarely interviewers expect to hear when these principles are useful and when they are not.|
 
 <br/>
+
 > OOP is mentioned in almost every job description and is often considered best though developers cannot always explain other paradigms.
+
 <br/>
 
 ### Sample Questions for Language Details (C#)
