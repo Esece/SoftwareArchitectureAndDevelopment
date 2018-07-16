@@ -26,4 +26,6 @@
 |Use caching with proper cache management (duration, dependency, events, etc.)|Just cache as much data as possible to speed up||
 |Make static methods thread-safe|Leave static methods thread-unsafe||
 |Organize namespaces and classes by functional area|Organize namespaces and classes as files and folders|These are two completely different purposes. One designed for developers using the code, the other for the code writer's benefits|
+|Use the '+' operator to concatenate a small number of strings for readability|Want to use a StringBuilder object everywhere because they were taught it's more efficient than using '+' signs|Keep code simple and readable first whichever is used. Then try profiling if performance needs improving "per requirement."|
+
 
