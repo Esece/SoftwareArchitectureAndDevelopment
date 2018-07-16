@@ -53,3 +53,26 @@ public void UpdatePhoneNumber(ref Document document, string phoneNumber)
     document.Phone = num;
 }
 ```
+``` csharp
+public ResponseModel UpdateProfile(Profile profile)
+{
+    ResponseModel response = null;
+
+    try
+    {
+        :
+
+        response = new ResponseModel() { Success = isSuccess, Messages = messages };
+    }
+    catch (Exception ex)
+    {
+        response = new ResponseModel() { Success = false, Messages = errorMessages };
+    }
+
+    return response;
+}
+```
+
+
+
+
