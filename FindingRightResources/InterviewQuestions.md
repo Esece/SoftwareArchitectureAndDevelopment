@@ -16,7 +16,9 @@
 |Reverse a string without using a library method|This is reinventing the wheel. Unless you work for a library vendor, it is not generally a good idea to write custom code unrelated to your core business. In fact, there are already many free solutions for string reversing. It's not a good way to measure creativity.|
 |What are the 3 principles of OOP?|Inheritance, encapsulation, and polymorphism are usually expected to be mentioned. However very rarely interviewers expect to hear when these principles are useful and when they are not.|
 
+<br/>
 > OOP is mentioned in almost every job description and is often considered best though developers cannot always explain other paradigms.
+<br/>
 
 ### Sample Questions for Language Details (C#)
 |Question|Notes|
