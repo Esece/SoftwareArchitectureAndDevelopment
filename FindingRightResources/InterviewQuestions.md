@@ -72,7 +72,15 @@ public ResponseModel UpdateProfile(Profile profile)
     return response;
 }
 ```
+``` csharp
+decimal price = 499.99m;
+:
 
+if ((int)price > 0)
+{
+    :
+}
+```
 
 
 
