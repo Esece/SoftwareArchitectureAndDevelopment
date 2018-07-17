@@ -81,6 +81,8 @@ if ((int)price > 0)
     :
 }
 ```
-
+``` csharp
+var count = $"{box.InnerCount}";
+```
 
 
