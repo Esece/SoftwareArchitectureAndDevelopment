@@ -72,21 +72,8 @@ public ResponseModel UpdateProfile(Profile profile)
     return response;
 }
 ```
-``` csharp
-decimal price = 499.99m;
-:
 
-if ((int)price > 0)
-{
-    :
-}
-```
-``` csharp
-var count = $"{box.InnerCount}";
-```
-``` csharp
-var total = result.Amounts != null && result.Amounts?.Any() == true ? result.Amounts?.Sum() : 0;
-```
+**[See more...](InterviewQuestions-FindCodingIssues.md)**
 
 
 
