@@ -84,5 +84,9 @@ if ((int)price > 0)
 ``` csharp
 var count = $"{box.InnerCount}";
 ```
+``` csharp
+var total = result.Amounts != null && result.Amounts?.Any() == true ? result.Amounts?.Sum() : 0;
+```
+
 
 
