@@ -40,6 +40,7 @@ else
     return value.ToString();  // "-123" for -123
 }
 ```
+<!-- value.ToString(((char)(((value >> 31) + 1) * 43)) + "0") -->
 
 ### Sample Questions for Finding "Not-so-good" Practices (C#)
 ``` csharp
