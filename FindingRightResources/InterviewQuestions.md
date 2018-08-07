@@ -1,24 +1,24 @@
 ## Issues with Interview Questions
 
-### Facts
-* Many companies ask questions that are just too academic or too impractical in their actual development environment.
-* Many interviewers ask questions they cannot even answer correctly.
-* Many questions lack context and yet expect generic solutions to the problems, when in real life, context plays a big role in decision making.
-* Many questions are expected to be answered with single specific right solutions that interviewers were looking for.
-* Many expected answers are not related to work candidates would be doing.
+### In Reality
+* Many companies ask questions that are just too academic or seemingly unrelated to their actual development environment.
+* Many interviewers ask questions they cannot answer with much explanation.
+* Many questions lack context and yet expect somewhat particular solutions to the problems, when in real life, context plays an important role in decision making.
 
 
 ### Examples of Academic Questions
-|Question|Issue|
+|Question|Issues|
 |-----|-----|
-|Is string a value type or reference type in C#?|Understanding how a string type is designed would be more useful.|
-|What is the difference between Boxing and Unboxing?|The issue to discuss should be rather using the object type to store a value type. Still, the boxing cost is insignificant in many applications.|
+|Is string a value type or reference type in C#?|C# string is an immutable type, so it's extremely difficult to see unexpected side effects. If the question is to understand the difference between value type and the reference type, ask this question directly instead. Also explaining how a string type is designed, such as immutability, would be more useful knowledge to test.|
+|What is the difference between Boxing and Unboxing?|At least two things interviewers expect to hear would be the boxing cost and the copying. Though asking about how to design a struct type may be more interesting, in much coding, custom structs are very rarely created, and boxing itself does not occur very often. Even if it does, the cost is insignificant in many applications.|
 |Reverse a string without using a library method|This is reinventing the wheel. Unless you work for a library vendor, it is not generally a good idea to write custom code unrelated to your core business. In fact, there are already many free solutions for string reversing. It's not a good way to measure creativity.|
-|What are the 3 principles of OOP?|Inheritance, encapsulation, and polymorphism are usually expected to be mentioned. However very rarely interviewers expect to hear when these principles are useful and when they are not.|
+|What are the 3 principles of OOP?|Inheritance, encapsulation, and polymorphism are usually expected to be mentioned. However many interviewers don't expect to hear beyond what they mean.|
 
 <br/>
 
-> OOP is mentioned in almost every job description and is often considered best though developers cannot always explain other paradigms.
+> OOP is mentioned in almost every job description and is often considered best, although developers cannot always explain other paradigms and how OOP is superior to others (and when others do better). 
+
+> In reality, many developers unconsciously use various programming styles because OOP either does not fit very well or is simply impractical or counter-productive.
 
 <br/>
 
@@ -27,6 +27,19 @@
 |-----|-----|
 |How would you name a local variable that you want to call "Shipping API?"  1) Shipping_API, 2) shipping_api, 3) shippingAPI, 4) ShippingAPI, 5) shippingApi|At least in C#, 5 is the most common name. Choosing 3 indicates that the candidate may not be familiar with the conventions or be simply careless about details.|
 
+
+### Sample Questions for Creativity  (C#)
+Implement the following without conditionals
+``` csharp
+if (value >=0)
+{
+    return "+" + value.ToString();  // "+456" for 456; "+0" for 0
+}
+else
+{
+    return value.ToString();  // "-123" for -123
+}
+```
 
 ### Sample Questions for Finding "Not-so-good" Practices (C#)
 ``` csharp
