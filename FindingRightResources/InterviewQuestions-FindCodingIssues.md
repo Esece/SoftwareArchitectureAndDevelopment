@@ -59,3 +59,20 @@ var count = $"{box.InnerCount}";
 ``` csharp
 var total = result.Amounts != null && result.Amounts?.Any() == true ? result.Amounts?.Sum() : 0;
 ```
+``` csharp
+var details = new ConcurrentBag<Detail>();
+
+foreach (var h in headers)
+{
+	var mapped = new List<Detail>();
+	Map(h, mapped);
+	foreach (var m in mapped)
+	{
+		details.Add(m);
+	}
+}
+
+item.Details = details.ToArray();
+
+```
+
