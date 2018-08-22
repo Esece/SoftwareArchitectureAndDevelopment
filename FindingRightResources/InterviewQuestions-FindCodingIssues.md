@@ -75,4 +75,10 @@ foreach (var h in headers)
 item.Details = details.ToArray();
 
 ```
+``` csharp
+if (countryCode?.Trim()?.ToUpper() == "US")
+{
+    :
+}
+```
 
