@@ -1,5 +1,5 @@
 ## Interview Questions
-#### Find Coding Issues (How can we improve?)
+#### Find Any Coding Issues and/or Share Some Ways to Improve
 
 ``` csharp
 class Request
@@ -64,12 +64,12 @@ var details = new ConcurrentBag<Detail>();
 
 foreach (var h in headers)
 {
-	var mapped = new List<Detail>();
-	Map(h, mapped);
-	foreach (var m in mapped)
-	{
-		details.Add(m);
-	}
+    var mapped = new List<Detail>();
+    Map(h, mapped);
+    foreach (var m in mapped)
+    {
+        details.Add(m);
+    }
 }
 
 item.Details = details.ToArray();
@@ -81,4 +81,11 @@ if (countryCode?.Trim()?.ToUpper() == "US")
     :
 }
 ```
-
+``` csharp
+public static string GetRandomString(int length)
+{
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    var random = new Random();
+    return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
+}
+```
