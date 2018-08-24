@@ -1,6 +1,8 @@
 ## Interview Questions
 #### Find Any Coding Issues and/or Share Some Ways to Improve
 
+> There is no compilation issues. Answer without using an IDE.
+
 ``` csharp
 class Request
 {
