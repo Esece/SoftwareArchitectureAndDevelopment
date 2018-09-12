@@ -34,5 +34,6 @@ string Format(int value)
 Guid GetHashCode(string value)
 {
     // write implementation...
+    // assume a GUID is a value in "123e4567-e89b-12d3-a456-426655440000" format (hyphenated 32 hexadecimal characters)
 }
 ```
