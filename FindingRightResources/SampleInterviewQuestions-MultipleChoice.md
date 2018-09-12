@@ -1,4 +1,4 @@
-## Interview Questions
+## Sample Interview Questions
 #### Multiple Choice Questions
 
 Two variables are declared as shown below. 
