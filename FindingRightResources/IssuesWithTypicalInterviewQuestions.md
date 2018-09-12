@@ -1,4 +1,4 @@
-## Issues with Interview Questions
+## Issues with Typical Interview Questions
 
 ### In Reality
 * Many companies ask questions that are just too academic or seemingly unrelated to their actual development environment.
