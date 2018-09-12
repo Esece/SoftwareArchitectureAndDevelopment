@@ -1,7 +1,7 @@
-## Interview Questions
-#### Find Any Coding Issues and/or Share Some Ways to Improve
+## Sample Interview Questions
+#### Point Out Any Coding Issues and Share Some Ways to Improve
 
-> There is no compilation issues. Answer without using an IDE.
+> **There is no compilation issues. Answer without using an IDE.**
 
 ``` csharp
 class Request
