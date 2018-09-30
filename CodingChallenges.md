@@ -17,6 +17,6 @@
 
 
 Requirements
-* The probability is calculated by 1 / (2 &#207b; &#207f; )
+* The probability is calculated by 1 / 2&#8315;&#8319;
 * The generated number is always positive
 * The maximum number is not specified
