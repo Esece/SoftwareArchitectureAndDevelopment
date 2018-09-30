@@ -1,5 +1,7 @@
 ## Coding Challenges
 
+
+
 ** Write reusable code that generates a number based on the following probabilities: ** 
 
 |Return Value|Probability|
@@ -15,6 +17,6 @@
 
 
 Requirements
-* The probability is calculated by 1 / (2 × 10−2)
+* The probability is calculated by 1 / (2 &#207b; &#207f; )
 * The generated number is always positive
 * The maximum number is not specified
