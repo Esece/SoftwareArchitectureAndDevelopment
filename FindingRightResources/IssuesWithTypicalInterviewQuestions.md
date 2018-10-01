@@ -14,6 +14,16 @@
 |Reverse a string without using a library method|This is reinventing the wheel. Unless you work for a library vendor, it is not generally a good idea to write custom code unrelated to your core business. In fact, there are already many free solutions for string reversing. It's not a good way to measure creativity.|
 |What are the 3 principles of OOP?|Inheritance, encapsulation, and polymorphism are usually expected to be mentioned. However many interviewers don't expect to hear beyond what they mean.|
 
+### Examples of Impractical Coding Tests
+|Test|Issues|
+|-----|-----|
+|Is the Number a Prime?||
+|Reverse the Order of Words||
+|Return the Sum of the Two Smallest Numbers||
+|Remove Duplicates from Array||
+|Reverse a Linked List||
+
+
 <br/>
 
 > OOP is mentioned in almost every job description and is often considered best, although developers cannot always explain other paradigms and how OOP is superior to others (and when others do better). 
