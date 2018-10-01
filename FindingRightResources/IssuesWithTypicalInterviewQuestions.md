@@ -22,6 +22,8 @@
 |Return the Sum of the Two Smallest Numbers||
 |Remove Duplicates from Array||
 |Reverse a Linked List||
+|Implement Queue using Linked List||
+|Stack using two queues||
 
 
 <br/>
