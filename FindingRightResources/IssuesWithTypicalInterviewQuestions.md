@@ -17,14 +17,14 @@
 ### Examples of Impractical Coding Tests
 |Test|Issues|
 |-----|-----|
-|Is the Number a Prime?||
-|Reverse the Order of Words||
-|Return the Sum of the Two Smallest Numbers||
-|Remove Duplicates from Array||
-|Reverse a Linked List||
-|Implement Queue using Linked List||
-|Stack using two queues||
-
+|Is the number a prime?|Standard math problem, maybe you need to know what the prime number is.|
+|Reverse the Order of Words|Non-practical, Use a standard libary|
+|Return the Sum of the Two Smallest Numbers|Use a standard libary|
+|Remove Duplicates from Array|Use a standard libary|
+|Reverse a Linked List|Reinventing the wheel|
+|Implement Queue using Linked List|You just need to know how a linked list works.|
+|Stack using two queues|You just need to how a stack behaves.|
+|Calculate the day of the week|Reinventing the wheel|
 
 <br/>
 
