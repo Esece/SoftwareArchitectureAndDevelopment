@@ -8,3 +8,5 @@
 -----
 #### Object.ReferenceEquals(...) and Object.Equals(...)
 -----
+#### IEnumerable\<T>.GetEnumerator\<T>()
+-----
