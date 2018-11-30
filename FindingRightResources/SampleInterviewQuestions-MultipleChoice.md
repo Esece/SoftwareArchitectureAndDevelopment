@@ -1,5 +1,7 @@
 ## Sample Interview Questions
-#### Multiple Choice Questions
+### Multiple Choice Questions
+
+<hr/>
 
 Two variables are declared as shown below. 
 ``` csharp
@@ -14,3 +16,15 @@ How would you assign the value 1234567890 to 'smallNumber'?
 5) smallNumber = bigNumber;
 
 <hr/>
+
+True or False
+``` csharp
+int? num = 123;
+int? num2 = num;
+
+Console.WriteLine(Object.ReferenceEquals(num, num2));
+```
+<hr/>
+
+
+
