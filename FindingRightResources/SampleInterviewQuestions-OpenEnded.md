@@ -10,3 +10,10 @@
 -----
 #### IEnumerable\<T>.GetEnumerator\<T>()
 -----
+``` csharp
+int GetLength<T>(T item) where T : new()
+{
+    :
+}
+```
+-----
